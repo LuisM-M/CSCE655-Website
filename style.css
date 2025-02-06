@@ -12,19 +12,21 @@ body {
 h1, h2, h3 {
     margin: 20px 0;
     padding: 0;
-    color: #0056b3;
 }
 
 h1 {
     font-size: 2.5em;
+    color: #333;
 }
 
 h2 {
     font-size: 2em;
+    color: #555;
 }
 
 h3 {
     font-size: 1.75em;
+    color: #777;
 }
 
 /* Paragraphs */
@@ -34,7 +36,7 @@ p {
 
 /* Links */
 a {
-    color: #0056b3;
+    color: #0066cc;
     text-decoration: none;
 }
 
@@ -59,8 +61,8 @@ table {
 
 th, td {
     padding: 10px;
-    text-align: left;
     border: 1px solid #ddd;
+    text-align: left;
 }
 
 th {
@@ -69,7 +71,7 @@ th {
 
 /* Lists */
 ul, ol {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 0 20px;
 }
 
@@ -96,22 +98,25 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-    background-color: #0056b3;
-    color: white;
     padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #003d80;
+    background-color: #005bb5;
 }
 
 /* Accessibility */
 #main-content {
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
     margin: 20px 0;
+}
+
+a[aria-label] {
+    display: block;
+    margin: 10px 0;
+    color: #0066cc;
 }
