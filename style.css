@@ -1,3 +1,4 @@
+
 /* General styles */
 body {
     font-family: Arial, sans-serif;
@@ -6,10 +7,48 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+      
 }
 
+/* header */
+header {
+    position: fixed; /* Keeps the header at the top */
+    top: 0;
+    width: 100%;
+    background: #076797; /* Blue background */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays above content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
 /* Headings */
-h1, h2, h3 {
+h1, h2 {
     margin: 60px 0 20px;
     padding: 0;
     text-align: center;
@@ -17,24 +56,27 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4.5em;
-    color: #333;
+    font-size: 4em;
+    font-family: Verdana;
+    color: #000000;
 }
 
 h2 {
-    font-size: 2em;
-    color: #555;
-}
-
-h3 {
-    font-size: 1.75em;
-    color: #777;
+    font-size: 2.5em;
+    color: #000000;
+    font-family: Verdana;
+    scroll-margin-top: 80px;
+    
 }
 
 /* Paragraphs */
 p {
-    margin: 10px 0;
-    text-align: center;
+    font-size: 1.5em;
+    font-family: Verdana;
+    margin: 20px 200px;
+    text-align: justify;
+    text-justify: inter-word;
+    
 }
 
 /* Links */
@@ -48,78 +90,110 @@ a:hover {
 }
 
 /* Images */
-img {
-    max-width: 100%;
+.image1 {
+    width: 300px;
     height: auto;
+    margin: 5px auto;
     display: block;
-    margin: 10px 0;
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    padding: 10px;
     border: 1px solid #ddd;
-    text-align: left;
+    border-radius: 50%;
+}
+.image-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin: 3em 0;
 }
 
-th {
-    background-color: #f2f2f2;
+figure {
+    text-align: center; 
+    margin: 0; 
+}
+
+figcaption {
+    margin-top: 5px; 
+}
+
+.image2, .image3 {
+    width: 350px;
+    height: auto;
+    margin: 1em 5em;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.image4 {
+    width: 200px;
+    height: auto;
+    margin: 5px auto;
+    display: block;
 }
 
 /* Lists */
-ul, ol {
-    margin: 10px 0;
-    padding: 0 20px;
+
+.list {
+    list-style-type: inside;
+    margin-left: 44%;
+    font-size: 1.5em;
+    font-family: Verdana;
+    
 }
 
-li {
-    margin: 5px 0;
-}
 
 /* Forms */
 form {
-    margin: 20px 0;
+    width: 300px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana;
 }
 
+/* Style the labels */
 label {
+    font-weight: bold;
+    font-family: Verdana;
+    margin-bottom: 5px;
     display: block;
-    margin: 10px 0 5px;
+    text-align: left;
+    width: 100%;
 }
 
-input[type="text"] {
+/* Style the inputs and textarea */
+input, textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Verdana;
 }
 
-input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #0066cc;
-    color: #fff;
+/* Style the submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0565cd; 
+    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana;
+    transition: background 0.3s;
 }
 
-input[type="submit"]:hover {
-    background-color: #005bb5;
+button:hover {
+    background: #01448c; /* Darker blue on hover */
 }
 
-/* Accessibility */
-#main-content {
-    margin: 20px 0;
-}
 
-a[aria-label] {
-    display: block;
-    margin: 10px 0;
-    color: #0066cc;
-}
+

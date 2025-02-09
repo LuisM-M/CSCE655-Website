@@ -3,83 +3,113 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>HTML Elements Example</title>
-   <link rel="stylesheet" href="style.css">
+   <title>Luis Martinez Morales</title>
+   <link rel="stylesheet" href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#accessibility">Accessibility</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
    <!-- Headings -->
    <h1>Luis Martinez Morales</h1>
-   <h2>I am a graduate student</h2>
-   <h3>This is for a project in the Spring Semester.</h3>
-
-
-   <!-- Paragraphs -->
-   <p>Howdy!</p>
-
-
-   <!-- Formatting -->
-   <p>Hope you are having a <b>WONDERFUL DAY</b> text using <code>&lt;b&gt;</code> tag.</p>
-
-
-   <!-- Links -->
-   <p>Visit the <a href="https://howdy.tamu.edu">Howdy</a> website.</p>
-   <p>What does Howdy mean? Click <a href="https://en.wikipedia.org/wiki/Howdy#:~:text=Howdy%20is%20an%20informal%20salutation,England%20in%20the%2018th%20century.">Here!</a>  </p>
-
-
-   <!-- Images -->
-   <img src="car.png" alt="An icon of a car">
-
-
-   <img src="dog.jpg" alt="A picture of our university mascot.">
-
-
-   <!-- Tables -->
-   <table border="1">
-       <thead>
-           <tr>
-               <th>Header 1</th>
-               <th>Header 2</th>
-           </tr>
-       </thead>
-       <tbody>
-           <tr>
-               <td>Data 1</td>
-               <td>Data 2</td>
-           </tr>
-       </tbody>
-   </table>
-
-
-   <!-- Lists -->
-   <ul>
-       <li>I think this class is going great so far.</li>
-       <li>Looking forward to seeing everyones presentation.</li>
-   </ul>
-   <ol>
-       <li>Ordered list item 1</li>
-       <li>Ordered list item 2</li>
-   </ol>
-
-
-   <!-- Forms -->
-
-
-   <p>Submit your name so we can keep your name in the registery!</p>
-   <form action="/submit" method="post">
-       <label for="name">Name:</label>
-       <input type="text" id="name" name="name">
-       <input type="submit" value="Submit">
-   </form>
-
-
-   <!-- Accessibility -->
- <a href="#main-content" aria-label="Skip to main content">Skip to main content</a>
-   <div style="height: 1000px;"></div>
    
-   <div id="main-content">
-       <h2>Main Content</h2>
-       <p>This is the main content area.</p>
-   </div>
+   <img src="image.png" class="image1" alt="A profile picture of Luis Martinez Morales. He is wearing a black shirt and has short black hair.">
+
+    <br>
+    <br>
+    <br>
+
+   <h2 id="about">About Me</h2>
+
+   <p> Howdy! My name is Luis Martinez Morales. 
+    <em> I am a Computer Science major pursuing a non-thesis master's degree.</em>
+    This is my second semester taking graduate courses. 
+    While I don't conduct research, I am interested in topics such as robotics and machine learning. 
+    I live in Austin, Texas, but I have also lived in Massachusetts. 
+    I was born in Mexico City and visit family there from time to time. </p>
+    <p>As an undergraduate, I was involved in various clubs and organizations, including Latino Males United, Aggies Create, TAMU Datathon, and Aggie Hispanics in Computing. 
+        Additionally, I enjoy watching TV shows on Apple TV, Netflix, and Disney Plus. 
+        I also have a passion for photography and videography, especially when using older cameras.</p>
+   
+    <div class="image-container">
+        <figure>
+            <img src="statueOfLiberty.JPG" class="image2" alt="A picture of the Statue of Liberty. The picture looks grainy and the sky is cloudy.">
+            <figcaption>The Statue of Liberty, taken with a disposable camera. </figcaption>
+        </figure>
+
+        <figure>
+            <img src="nyc.JPG" class="image3" alt="A picture of Times Square. The picture looks dark and the lights from the advertisements are bright.">
+            <figcaption>Times Square, taken with a disposable camera. </figcaption>
+        </figure>
+    </div>
+    <div class="centered">
+        <p>Some of my favorite tv shows and movies include: </p>
+    </div>
+    
+    <div class="list">
+        <ul>
+            <li> Breaking Bad </li>
+            <li> Daredevil </li>
+            <li> The Last Dance </li>
+            <li> Interstellar </li>
+            <li> Whiplash </li>
+            <li> Spider-Man 2 </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h2 id="accessibility">Accessibility Interests</h2>
+
+    <p>I am interested in various fields within accessibility. 
+        First, I believe that communication is a key element of everyday life. 
+        <strong>One aspect of accessibility that particularly catches my attention is language barriers.  </strong> 
+        I think it's important to be able to visit different countries and communicate effectively with others, as it fosters a deeper understanding and stronger connections with more people.
+         One fascinating technology I discovered is Vasco, a device that allows users to understand up to 112 languages. 
+         It can translate photos, text, and even audio recordings, making communication across languages more accessible. </p>
+
+    <p> Click <a href="https://vasco-translator.com/translators/vasco-translator-v4">here</a> if you would like to learn more about Vasco!</p>
+
+    <p> Another area that interests me is accessible technology, which <em> enables </em> people with different abilities to <em> share </em> the same experiences.
+         One of the most impressive innovations I've seen in gaming is the Xbox Adaptive Controller. 
+         This device allows users to customize a variety of buttons and inputs, replacing the standard Xbox controller to better suit individual needs.
+          Another remarkable piece of technology is the chorded keyboard, which enables users to type using a single hand by pressing a sequence of key combinations (or "chords") to produce all the characters on a standard keyboard. </p>
+    <p> Click <a href="https://www.xbox.com/en-US/accessories/controllers/xbox-adaptive-controller">here</a> if you would like to learn more about the Xbox Adaptive Controller!</p>
+    <p> Click <a href="https://www.pcmag.com/encyclopedia/term/chorded-keyboard">here</a> if you would like to learn more about Chorder Keyboards!</p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="email.png" class="image4" alt="">
+    
+    
+    <!-- Forms -->
+    <h2 id="contact">Contact Me</h2>
+    <form action="mailto:2002luismm@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required><br><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required><br><br>
+    
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="Message" rows="4" required></textarea><br><br>
+    
+        <button type="submit">Send</button>
+    </form>
+
 </body>
 </html>
 
